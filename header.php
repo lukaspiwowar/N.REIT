@@ -11,7 +11,7 @@
   <script src="<?php echo get_template_directory_uri()?>/ism/js/ism-2.2.min.js"></script>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/ism/css/my-slider.css"/>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"?></script>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,8 +71,8 @@
 						'theme_location' => 'top',
 						'menu_id'        => 'navpages',
 						'container'      => false,
-						 'link_after' => ' &nbsp;&nbsp;&nbsp;/ ',
-						'items_wrap'     => '<ul class="top-menu clearfix">%3$s</ul>'
+						 'link_after' => ' ',
+						'items_wrap'     => '<ol class="top-menu clearfix">%3$s</ol>'
 					) );
 				else : ?>
 				

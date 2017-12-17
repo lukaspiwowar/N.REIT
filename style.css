@@ -882,13 +882,17 @@ button:hover,
 .top-menu li .sub-menu > li:hover > span:hover  {  
 
 }
-.top-menu .menu-item a{color:GREY;}
+.top-menu .menu-item a{
+	color:GREY;
+	text-transform: uppercase;
+}
 
 .top-menu .current_page_item > a,
 .top-menu .current_page_item > span,
 .top-menu .current-menu-item > a,
 .top-menu .current-menu-item > span {
  color: #000000;
+ text-transform: uppercase;
 }
 .top-menu .current-menu-item > a:hover,
 .top-menu .current-menu-item > span:hover { color: #000000; }
@@ -1321,7 +1325,17 @@ a[title="Report errors in the road map or imagery to Google"] {
 	.topnav nav {display: block;  float: right; }
 	.topnav {background: transparent;}
 	.top-menu { position: static; text-align: center; }
-	.top-menu li { display: inline-block; position: relative; }
+	.top-menu li { display: inline-block; position: relative; padding: 0 15px;}
+	.top-menu li:after {
+		display: block;
+		content: ' / ';
+		right: 0;
+		top: 0;
+		position: absolute;
+	}
+	.top-menu li:last-child:after {
+		content: '';
+	}
 	.top-menu li a { border-bottom: 0; font-weight: normal; color: #fff; -webkit-transition: background 0.3s; transition: background 0.3s; }
 	.top-menu > li:hover > a { background: rgba(255,255,255,0.3);  }
 	.top-menu .sub-menu, .top-menu .children { display: none; margin: 0; position: absolute; top: 100%; left: 0; background: #936; width: 300px; z-index: 1000;  box-shadow: 3px 3px 0 rgba(0,0,0,0.1); }
